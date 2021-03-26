@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Poses/Backgrounds/images.jpg" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 118.423, 120.937 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 527.849, 34.745 )
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2( 643.074, 565.699 )
+input_pickable = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -324.778, -161.456 )
+scale = Vector2( 0.40603, 0.222182 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+show_behind_parent = true
+position = Vector2( -111.578, -12.8704 )
+shape = SubResource( 1 )
+
+[node name="images" type="Sprite" parent="."]
+position = Vector2( -125.126, -6.30542 )
+scale = Vector2( 0.374615, 0.319073 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( -534.87, -32.5085, 2794.87, 227.717 )
+
+[node name="images2" type="Sprite" parent="."]
+position = Vector2( -327.606, -161.456 )
+scale = Vector2( 0.40603, 0.222182 )
+texture = ExtResource( 1 )
