@@ -1,4 +1,4 @@
 extends CanvasLayer
 
 func _process(delta):
-	$puntuacion.text="Monedas: " + str(Globalvar.puntos)
+	$puntuacion.text="Monedes: " + str(Globalvar.puntos)
