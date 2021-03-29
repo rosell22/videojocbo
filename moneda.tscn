@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://png/element_yellow_polygon_glossy.png" type="Texture" id=1]
+[ext_resource path="res://moneda.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20.3616, 19.5081 )
+
+[node name="moneda" type="Sprite"]
+position = Vector2( 535.381, 246.82 )
+scale = Vector2( 1.85182, 1.74478 )
+texture = ExtResource( 1 )
+offset = Vector2( -89.9334, 23 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -90.1154, 25.9373 )
+shape = SubResource( 1 )

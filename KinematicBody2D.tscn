@@ -7,13 +7,13 @@
 [ext_resource path="res://Poses/player_walk1.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 40, 55.3969 )
+extents = Vector2( 24.7787, 40.5512 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "saltant",
+"name": "pupa",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 2 ) ],
@@ -21,14 +21,14 @@ animations = [ {
 "name": "caminant",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "saltant",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "quiet",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "pupa",
 "speed": 5.0
 } ]
 
@@ -40,7 +40,7 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -5.03986, -5.03973 )
-scale = Vector2( 1.25199, 1 )
+position = Vector2( -0.0795326, -5.48019 )
+scale = Vector2( 1.126, 0.862554 )
 frames = SubResource( 2 )
 animation = "pupa"
