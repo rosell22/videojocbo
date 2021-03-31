@@ -1,8 +1,8 @@
 extends KinematicBody2D
-var gravetat= 4000
+var gravetat= 5000
 var velocitat := Vector2(0,0)
 var accelaracio:Vector2=Vector2(3,5)
-export var velocitat_max=100
+export var velocitat_max=400
 var contadormonedas=0
 # Declare member variables here. Examples:
 # var a = 2

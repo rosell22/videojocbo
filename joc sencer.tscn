@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Terra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://joc sencer.gd" type="Script" id=4]
 [ext_resource path="res://contador.gd" type="Script" id=5]
+[ext_resource path="res://mountainbackground.webp" type="Texture" id=6]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
@@ -34,3 +35,10 @@ custom_colors/font_color = Color( 0.976471, 0.972549, 0.960784, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 649.125, 272.944 )
+scale = Vector2( 0.817566, 0.854159 )
+texture = ExtResource( 6 )
